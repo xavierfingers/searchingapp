@@ -9,10 +9,16 @@
 </head>
 <body>
  <main>  
-  <script async type="module">
-  import LazyLoad from "https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.0.3/+esm";   
-  lazyLoadInstance.update();
-</script>
+  <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.0.3/dist/lazyload.min.js"></script>
+   <script>
+     window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+   );
+   </script>
   <h1 class="text-3xl">Basic search website using engines</h1>
    <script async src="partytown.js">
     <p style="font-family:Arial;">This is a basic search engine using Google.</p>
