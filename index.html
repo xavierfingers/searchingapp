@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <body style="font-family:Arial;">
+ <body>
  <head>
   <meta http-equiv="X-XSS-Protection" content="1">
   <meta charset="UTF-8">
@@ -15,9 +15,10 @@
     <button class="bg-blue-500 rounded-full hover:bg-blue-50 transform duration-300">TailwindCSS</button>
   </a>
   <h1 class="text-3xl">Basic search website using engines</h1>
-    <p>This is a basic search engine using Google.</p>
+    <p style="font-family:Arial;">This is a basic search engine using Google.</p>
      <input placeholder="Enter search query: " id="query">
       <button onclick="let query = document.getElementById('query').value; window.location.href = 'https://google.com/search?q=' + query">Search</button>
+      <button onclick="let bingq = document.getElementById('query').value; window.location.href = 'https://bing.com/search?q=' + bingq">Search on Bing</button>
       </a>
    </main>
   </body>
