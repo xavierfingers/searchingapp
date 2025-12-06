@@ -8,8 +8,13 @@
   <title>Basic site</title>
 </head>
 <body>
- <main>
+ <main>  
+  <script async type="module">
+  import LazyLoad from "https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.0.3/+esm";   
+  lazyLoadInstance.update();
+</script>
   <h1 class="text-3xl">Basic search website using engines</h1>
+   <script async src="partytown.js">
     <p style="font-family:Arial;">This is a basic search engine using Google.</p>
      <input placeholder="Enter search query: " id="query">
       <button onclick="let query = document.getElementById('query').value; window.location.href = 'https://google.com/search?q=' + query">Search</button>
