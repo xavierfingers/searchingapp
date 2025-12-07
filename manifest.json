@@ -1,0 +1,9 @@
+{
+  "name": "Private Multi-Search Browser",
+  "short_name": "SearchBrowser",
+  "description": "Private browser for Google, DuckDuckGo, and Bing",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#2d2d2d",
+}
