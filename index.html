@@ -17,7 +17,7 @@
     <p style="font-family:Arial;">Fully-functional private web browser on the web.</p>
      <input placeholder="Enter search query: " id="query">
      <input placeholder="Enter site: " id="site">
-      <button onclick="window.location.href = site">Go to site</button>
+      <button onclick="window.location.href = document.getElementById('site').value">Go to site</button>
       <button onclick="let query = document.getElementById('query').value; window.location.href = 'https://google.com/search?q=' + query">Search on Google</button>
       <button onclick="let bingq = document.getElementById('query').value; window.location.href = 'https://bing.com/search?q=' + bingq">Search on Bing</button>
       <button onclick="let duckq = document.getElementById('query').value; window.location.href = 'https://duckduckgo.com/search?q=' + duckq">Search on DuckDuckGo</button>
