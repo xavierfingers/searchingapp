@@ -19,8 +19,8 @@
   <script async type="text/partytown" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.0.3/dist/lazyload.min.js"></script>
   <h1 class="text-3xl transform duration-300">pBoW</h1>
     <p style="font-family:Arial;">Fully-functional private web browser on the web.</p>
-     <input placeholder="Enter search query: " id="query">
-     <input placeholder="Enter site: " id="site">
+     <input type="search" placeholder="Enter search query: " id="query">
+     <input type="search" placeholder="Enter site: " id="site">
       <button onclick="window.location.href = 'https://' + document.getElementById('site').value">Go to site</button>
       <button onclick="let query = document.getElementById('query').value; window.location.href = 'https://google.com/search?q=' + query">Search on Google</button>
       <button onclick="let bingq = document.getElementById('query').value; window.location.href = 'https://bing.com/search?q=' + bingq">Search on Bing</button>
