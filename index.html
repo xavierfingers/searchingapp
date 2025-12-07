@@ -2,6 +2,7 @@
 <html lang="en">
  <body>
  <head>
+  <link rel="manifest" href="/manifest.json"
   <meta charset="UTF-8">
   <meta name="description" content="Basic Search engine">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -10,10 +11,13 @@
 <body>
  <main>
   <script src="partytown.js"></script>
+  <script type="text/partytown" src="https://cdn.tailwindcss.com"></script>
   <script async type="text/partytown" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.0.3/dist/lazyload.min.js"></script>
   <h1 class="text-3xl transform duration-300">pBoW</h1>
     <p style="font-family:Arial;">Fully-functional private web browser on the web.</p>
      <input placeholder="Enter search query: " id="query">
+     <input placeholder="Enter site: " id="site">
+      <button onclick="window.location.href = site">Go to site</button>
       <button onclick="let query = document.getElementById('query').value; window.location.href = 'https://google.com/search?q=' + query">Search on Google</button>
       <button onclick="let bingq = document.getElementById('query').value; window.location.href = 'https://bing.com/search?q=' + bingq">Search on Bing</button>
       <button onclick="let duckq = document.getElementById('query').value; window.location.href = 'https://duckduckgo.com/search?q=' + duckq">Search on DuckDuckGo</button>
